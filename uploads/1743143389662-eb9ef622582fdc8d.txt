@@ -1,0 +1,102 @@
+lockdown-install.js:1 Removing unpermitted intrinsics
+cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css:1 
+            
+            
+           Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+moment.min.js:1 
+            
+            
+           Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+css2:1 
+            
+            
+           Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+main.js:3232 DOM content loaded, setting up event listeners
+main.js:3289 Auto-login successful: Object
+main.js:357 Initializing socket connection with token true
+main.js:3119 Token payload: Object
+main.js:3131 User role set to: User
+main.js:3136 Current display style: 
+main.js:3141 Setting upload button to visible (flex)
+main.js:3119 Token payload: Object
+main.js:3131 User role set to: User
+main.js:3136 Current display style: flex
+main.js:3141 Setting upload button to visible (flex)
+main.js:3236 Setting up admin UI elements
+main.js:3119 Token payload: Object
+main.js:3240 Current user role: User
+main.js:3256 User is not admin, hiding room/group creation controls
+main.js:392 Socket connected as Ven with ID: jerxYcLKitUI58-pAAAF
+main.js:1985 Clients total: 2
+main.js:1994 User list update received: Object
+main.js:1800 Current groups: Array(1)
+main.js:1801 Current username: Ven
+main.js:1813 User groups: Array(1)
+main.js:1830 Group: group, Owner: System, Current User: Ven
+main.js:2194 Room users count update: Object
+main.js:2007 Room changed: Object
+main.js:2007 Room changed: Object
+main.js:1994 User list update received: Object
+main.js:1800 Current groups: Array(1)
+main.js:1801 Current username: Ven
+main.js:1813 User groups: Array(1)
+main.js:1830 Group: group, Owner: System, Current User: Ven
+main.js:2736 Loading files for group: group
+main.js:2736 Loading files for group: group
+main.js:2761 Files retrieved successfully: Object
+main.js:2770 Error loading files: ReferenceError: moment is not defined
+    at main.js:2829:22
+    at Array.forEach (<anonymous>)
+    at updateFilesList (main.js:2821:15)
+    at main.js:2767:5
+(anonymous) @ main.js:2770
+main.js:2761 Files retrieved successfully: Object
+main.js:2770 Error loading files: ReferenceError: moment is not defined
+    at main.js:2829:22
+    at Array.forEach (<anonymous>)
+    at updateFilesList (main.js:2821:15)
+    at main.js:2767:5
+(anonymous) @ main.js:2770
+main.js:436 Disconnected: io client disconnect
+main.js:3408 Login response: Object
+main.js:3473 OTP verification response: Object
+main.js:357 Initializing socket connection with token true
+main.js:3119 Token payload: Object
+main.js:3131 User role set to: User
+main.js:3136 Current display style: flex
+main.js:3141 Setting upload button to visible (flex)
+main.js:3119 Token payload: Object
+main.js:3131 User role set to: User
+main.js:3136 Current display style: flex
+main.js:3141 Setting upload button to visible (flex)
+main.js:392 Socket connected as Ven with ID: Ow5yT7KGLEBQ9qBCAAAG
+main.js:1985 Clients total: 2
+main.js:1994 User list update received: Object
+main.js:1800 Current groups: Array(1)
+main.js:1801 Current username: Ven
+main.js:1813 User groups: Array(1)
+main.js:1830 Group: group, Owner: System, Current User: Ven
+main.js:2194 Room users count update: Object
+main.js:2007 Room changed: Object
+main.js:2007 Room changed: Object
+main.js:1994 User list update received: Object
+main.js:1800 Current groups: Array(1)
+main.js:1801 Current username: Ven
+main.js:1813 User groups: Array(1)
+main.js:1830 Group: group, Owner: System, Current User: Ven
+main.js:3506 --- Debug Information ---
+main.js:3507 Socket connected: true
+main.js:3508 Socket ID: Ow5yT7KGLEBQ9qBCAAAG
+main.js:3509 Authentication token: eyJhbGciOi...
+main.js:3510 Current username: Ven
+main.js:3511 User role: User
+main.js:1994 User list update received: {users: Array(2), rooms: Array(1), groups: Array(1)}
+main.js:1800 Current groups: [{…}]
+main.js:1801 Current username: Ven
+main.js:1813 User groups: [{…}]
+main.js:1830 Group: group, Owner: System, Current User: Ven
+main.js:1994 User list update received: {users: Array(2), rooms: Array(1), groups: Array(1)}
+main.js:1800 Current groups: [{…}]
+main.js:1801 Current username: Ven
+main.js:1813 User groups: [{…}]
+main.js:1830 Group: group, Owner: System, Current User: Ven

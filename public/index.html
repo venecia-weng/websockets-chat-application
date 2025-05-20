@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>iChat</title>
+  </head>
+  <body>
+    <h1 class="title">iChat <span class="chat-icon">💬</span></h1>
+   
+    <!-- Authentication Forms -->
+  <div id="auth-container" class="auth-container">
+    <div class="tab-container">
+      <button class="tab-button active" id="login-tab">Login</button>
+      <button class="tab-button" id="register-tab">Register</button>
+    </div>
+
+    <!-- Login Form -->
+    <form id="login-form" class="auth-form">
+      <div class="form-group">
+        <label for="login-username">Username</label>
+        <input type="text" id="login-username" required />
+      </div>
+      <div class="form-group">
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" required />
+      </div>
+      <button type="submit" class="auth-button">Login</button>
+      <p id="login-message" class="message"></p>
+    </form>
+
+    <!-- Register Form -->
+    <form id="register-form" class="auth-form" style="display: none;">
+      <div class="form-group">
+        <label for="register-username">Username</label>
+        <input type="text" id="register-username" required />
+      </div>
+      <div class="form-group">
+        <label for="register-email">Email</label>
+        <input type="email" id="register-email" required />
+      </div>
+      <div class="form-group">
+        <label for="register-password">Password</label>
+        <input type="password" id="register-password" required />
+      </div>
+      <div class="form-group">
+        <label for="register-confirm-password">Confirm Password</label>
+        <input type="password" id="register-confirm-password" required />
+      </div>
+      <button type="submit" class="auth-button">Register</button>
+      <p id="register-message" class="message"></p>
+    </form>
+
+    <!-- OTP Form (initially hidden) -->
+    <form id="otp-form" class="auth-form" style="display: none;">
+      <div class="form-group">
+        <label for="otp">Enter OTP sent to your email</label>
+        <input type="text" id="otp" required />
+      </div>
+      <button type="submit" class="auth-button">Verify OTP</button>
+      <p id="otp-message" class="message"></p>
+    </form>
+  </div>
+
+  <!-- Chat Container (initially hidden) -->
+    <div class="chat-container" style="display: none;">
+         <div class="main">
+        <div class="sidebar">
+          <div class="user-info">
+            <span id="username-display"></span>
+            <button id="logout-button" class="logout-button">Logout</button>
+       
+            <select id="status-select" class="status-select">
+              <option value="online">Online</option>
+              <option value="idle">Idle</option>
+              <option value="away">Away</option>
+              <option value="busy">Busy</option>
+            </select>
+          </div>
+          
+          <div class="rooms-section">
+            <h3>Rooms</h3>
+            <ul id="room-list" class="room-list">
+              <li class="room active" data-room="general">General</li>
+            </ul>
+            <div class="new-room">
+              <input type="text" id="new-room-input" placeholder="New room name..." />
+              <button id="create-room-btn">+</button>
+            </div>
+          </div>
+          
+          <div class="groups-section">
+            <h3>Groups</h3>
+            <ul id="group-list" class="group-list">
+              <!-- Groups will be added dynamically -->
+            </ul>
+            <div class="new-group">
+              <input type="text" id="new-group-input" placeholder="Create a group..." />
+              <button id="create-group-btn">+</button>
+            </div>
+          </div>
+          
+          <div class="users-section">
+            <h3>Online Users</h3>
+            <ul id="user-list" class="user-list">
+              <!-- Users will be added dynamically -->
+            </ul>
+          </div>
+        </div>
+        
+        <div class="chat-area">
+          <div class="chat-header">
+            <div class="chat-header-title">
+            <h3 id="current-room">General</h3>
+            <span id="room-users-count">0 users</span>
+            </div>
+          </div>
+
+          <div class="chat-tabs">
+            <button class="tab-button active" data-tab="messages">Messages</button>
+            <button class="tab-button" data-tab="files">Files</button>
+            </div>
+
+          <div class="tab-content">
+            <!-- Messages Tab -->
+            <div id="messages-tab" class="tab-pane active">
+              <ul class="message-container" id="message-container">
+              </ul>
+            </div>
+
+            <div class="message-input-container">
+              <input
+                type="text"
+                name="message"
+                id="message-input"
+                class="message-input"
+                placeholder="Type a message..."
+              />
+              <div class="v-divider"></div>
+              <button id="send-button" class="send-button">
+                send <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+      </div>
+    </div>
+  
+  <!-- Files Tab -->
+  <div id="files-tab" class="tab-pane">
+    <div class="files-container">
+      <div class="files-header">
+        <h3>Shared Files</h3>
+        <div class="files-actions">
+          <button id="upload-file-btn" class="file-btn">
+            <i class="fas fa-upload"></i> Upload
+          </button>
+          <input type="file" id="file-upload-input" style="display: none;">
+        </div>
+      </div>
+      
+      <div class="files-list-header">
+        <div class="file-name-col">Name</div>
+        <div class="file-uploader-col">Uploaded By</div>
+        <div class="file-date-col">Date</div>
+        <div class="file-actions-col">Actions</div>
+      </div>
+      
+      <ul id="files-list" class="files-list">
+        <!-- Files will be added dynamically -->
+        <li class="no-files-message">No files have been shared in this room yet.</li>
+      </ul>
+  </div>
+</div>
+
+<!-- File Preview Modal -->
+<div id="file-preview-modal" class="modal">
+  <div class="modal-content large">
+    <div class="modal-header">
+      <h3 id="preview-filename">File Preview</h3>
+      <span class="close">&times;</span>
+    </div>
+    <div class="modal-body">
+      <div class="preview-toolbar">
+        <button id="preview-download-btn" class="btn primary">
+          <i class="fas fa-download"></i> Download
+        </button>
+      </div>
+      <div id="preview-content" class="preview-content">
+        <!-- Preview content will be inserted here -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- File Upload Modal -->
+<div id="file-upload-modal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>Upload File</h3>
+      <span class="close">&times;</span>
+    </div>
+    <div class="modal-body">
+      <div id="upload-area" class="upload-area">
+        <i class="fas fa-cloud-upload-alt"></i>
+        <p>Drag & drop files here or click to select files</p>
+      </div>
+      <div id="upload-preview">
+        <div class="selected-file-info" style="display: none;">
+          <p id="selected-filename">No file selected</p>
+          <p id="selected-filesize"></p>
+        </div>
+      </div>
+      <div class="privacy-toggle">
+        <label>
+          <input type="checkbox" id="file-privacy-toggle">
+          <span>Make file private</span>
+        </label>
+      </div>  
+    <div class="modal-footer">
+      <button id="upload-cancel-btn" class="btn">Cancel</button>
+      <button id="upload-confirm-btn" class="btn primary">Upload</button>
+    </div>
+  </div>
+</div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.28.0/moment.min.js"
+      integrity="sha512-Q1f3TS3vSt1jQ8AwP2OuenztnLU6LwxgyyYOG1jgMW/cbEMHps/3wjvnl1P3WTrF3chJUWEoxDUEjMxDV8pujg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

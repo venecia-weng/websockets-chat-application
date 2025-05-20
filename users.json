@@ -1,0 +1,56 @@
+{
+  "System": {
+    "username": "System",
+    "email": "admin@yourcompany.com",
+    "password": "$2b$10$eXBvW/mf2G6F7m5qAVJbd.EQ0VyePgJSDpuwQlvOGZpiP1FsnPNju",
+    "role": "Admin",
+    "createdAt": "2025-03-26T10:49:17.827Z",
+    "failedLoginAttempts": 0,
+    "lockedUntil": null
+  },
+  "Ven": {
+    "username": "Ven",
+    "email": "venecia.weng@gmail.com",
+    "password": "$2b$10$i4U4dgD5JWLoqjs67EXfXODUIZW892LJjkviK1dvvuP1JUIQ0mHRy",
+    "role": "User",
+    "createdAt": "2025-03-26T10:49:54.284Z",
+    "failedLoginAttempts": 0,
+    "lockedUntil": null
+  },
+  "JW": {
+    "username": "JW",
+    "email": "Ghojw123@gmail.com",
+    "password": "$2b$10$97FjAmCYEo2wszh4yqZcJOYiAwqdDsgdmp93VzD1Je3xVwQhYop6G",
+    "role": "User",
+    "createdAt": "2025-03-26T11:02:23.968Z",
+    "failedLoginAttempts": 0,
+    "lockedUntil": null
+  },
+  "Lily": {
+    "username": "Lily",
+    "email": "2403464@sit.singaporetech.edu.sg",
+    "password": "$2b$10$oP1H6Ty/MWdAkcURwBg2Au7GfoqhKF1eEDQbl3FBSPOMcVW2O2DxO",
+    "role": "User",
+    "createdAt": "2025-03-27T04:44:13.289Z",
+    "failedLoginAttempts": 0,
+    "lockedUntil": "2025-03-28T06:33:08.268Z"
+  },
+  "Jingwen": {
+    "username": "Jingwen",
+    "email": "goh_jing_wen@outlook.com",
+    "password": "$2b$10$dO/K7UoxwfUZfUdZ8pNpbu24ijzO/D5VsUxrCZVo9XKpilTdavahK",
+    "role": "User",
+    "createdAt": "2025-03-27T12:17:42.329Z",
+    "failedLoginAttempts": 1,
+    "lockedUntil": null
+  },
+  "Jeanie": {
+    "username": "Jeanie",
+    "email": "jeanie@gmail.com",
+    "password": "$2b$10$wYQWGRvH3VI3jighhCm7YO60aOGkam26tlKfR.u/qPw/YQGEQW7zy",
+    "role": "User",
+    "createdAt": "2025-03-28T06:04:56.892Z",
+    "failedLoginAttempts": 0,
+    "lockedUntil": null
+  }
+}

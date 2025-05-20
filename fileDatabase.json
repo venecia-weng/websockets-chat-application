@@ -1,0 +1,162 @@
+{
+  "1743077909799-cce85262a56c2e4c.jpg": {
+    "filename": "1743077909799-cce85262a56c2e4c.jpg",
+    "originalName": "Sunday-Night-Market.jpg",
+    "mimetype": "image/jpeg",
+    "size": 492975,
+    "uploadedBy": "System",
+    "uploadedAt": "2025-03-27T12:18:29.800Z",
+    "room": "client meetings",
+    "isPrivate": false,
+    "chatContext": {
+      "type": "room",
+      "target": "client meetings"
+    },
+    "accessControl": {
+      "default": "public",
+      "users": {
+        "System": "full"
+      }
+    }
+  },
+  "1743078124217-1d7fc600c519653d.jpg": {
+    "filename": "1743078124217-1d7fc600c519653d.jpg",
+    "originalName": "buffalo-2728206_1280.jpg",
+    "mimetype": "image/jpeg",
+    "size": 199767,
+    "uploadedBy": "System",
+    "uploadedAt": "2025-03-27T12:22:04.218Z",
+    "room": "general",
+    "isPrivate": false,
+    "chatContext": {
+      "type": "group",
+      "target": "lunch"
+    },
+    "accessControl": {
+      "default": "public",
+      "users": {
+        "System": "full"
+      }
+    }
+  },
+  "1743078142980-197bc201dea3acfd.jpg": {
+    "filename": "1743078142980-197bc201dea3acfd.jpg",
+    "originalName": "Sunday-Night-Market.jpg",
+    "mimetype": "image/jpeg",
+    "size": 492975,
+    "uploadedBy": "System",
+    "uploadedAt": "2025-03-27T12:22:22.984Z",
+    "room": "general",
+    "isPrivate": true,
+    "chatContext": {
+      "type": "group",
+      "target": "lunch"
+    },
+    "accessControl": {
+      "default": "private",
+      "users": {
+        "System": "full"
+      }
+    }
+  },
+  "1743078198586-c933472c7bfa97d6.jpg": {
+    "filename": "1743078198586-c933472c7bfa97d6.jpg",
+    "originalName": "img.jpg",
+    "mimetype": "image/jpeg",
+    "size": 716080,
+    "uploadedBy": "System",
+    "uploadedAt": "2025-03-27T12:23:18.587Z",
+    "room": "new room",
+    "isPrivate": true,
+    "chatContext": {
+      "type": "room",
+      "target": "new room"
+    },
+    "accessControl": {
+      "default": "private",
+      "users": {
+        "System": "full"
+      }
+    }
+  },
+  "1743142065143-f3b09808e85285df.jpeg": {
+    "filename": "1743142065143-f3b09808e85285df.jpeg",
+    "originalName": "0.jpeg",
+    "mimetype": "image/jpeg",
+    "size": 147671,
+    "uploadedBy": "Jeanie",
+    "uploadedAt": "2025-03-28T06:07:45.144Z",
+    "room": "general",
+    "isPrivate": false,
+    "chatContext": {
+      "type": "private",
+      "target": "Ven"
+    },
+    "accessControl": {
+      "default": "public",
+      "users": {
+        "Jeanie": "full"
+      }
+    }
+  },
+  "1743143389662-eb9ef622582fdc8d.txt": {
+    "filename": "1743143389662-eb9ef622582fdc8d.txt",
+    "originalName": "error1.txt",
+    "mimetype": "text/plain",
+    "size": 4364,
+    "uploadedBy": "Ven",
+    "uploadedAt": "2025-03-28T06:29:49.663Z",
+    "room": "hello",
+    "isPrivate": false,
+    "chatContext": {
+      "type": "room",
+      "target": "hello"
+    },
+    "accessControl": {
+      "default": "public",
+      "users": {
+        "Ven": "full"
+      }
+    }
+  },
+  "1743143575716-f44b4d82ebf3952f.png": {
+    "filename": "1743143575716-f44b4d82ebf3952f.png",
+    "originalName": "Picture1.png",
+    "mimetype": "image/png",
+    "size": 61989,
+    "uploadedBy": "System",
+    "uploadedAt": "2025-03-28T06:32:55.717Z",
+    "room": "hello",
+    "isPrivate": true,
+    "chatContext": {
+      "type": "room",
+      "target": "hello"
+    },
+    "accessControl": {
+      "default": "private",
+      "users": {
+        "System": "full"
+      }
+    }
+  },
+  "1743143804377-7f35d2856ed2c964.png": {
+    "filename": "1743143804377-7f35d2856ed2c964.png",
+    "originalName": "Picture1.png",
+    "mimetype": "image/png",
+    "size": 61989,
+    "uploadedBy": "System",
+    "uploadedAt": "2025-03-28T06:36:44.379Z",
+    "room": "general",
+    "isPrivate": true,
+    "chatContext": {
+      "type": "group",
+      "target": "huh"
+    },
+    "accessControl": {
+      "default": "private",
+      "users": {
+        "System": "full"
+      }
+    }
+  }
+}
